@@ -14,7 +14,7 @@ import google.generativeai as genai
 os.getenv("GOOGLE_API_KEY")
 genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
-## Function to load OpenAI model and get respones
+## Function to give the input and get respones
 
 def get_gemini_response(input,image):
     model = genai.GenerativeModel('gemini-pro-vision')
